@@ -39,6 +39,6 @@ def main():
     LOGIN = st.button("ENTER", "ButtonLogin","Login", check_identity, (USER_ID, PASSWORD))
     
     if LOGIN:
-        st.writ("Login success")
+        st.write("Login success")
 
 main()
