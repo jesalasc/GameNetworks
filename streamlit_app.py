@@ -21,6 +21,12 @@ def check_identity(ID, PASSWORD):
     if ID in Users.keys():
         if Users[ID] == PASSWORD:
             return True
+        else:
+            st.write("Wrong Password")
+            return False
+    else:
+        st.write("Wrong ID")
+        return False
     return False
 
 def main():
