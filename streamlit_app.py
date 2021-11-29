@@ -36,7 +36,7 @@ def main():
     
     PASSWORD = st.text_input("Enter your password", "", 8,"PASSWORD")
     
-    LOGIN = st.button("ENTER",None, check_identity, (USER_ID, PASSWORD))
+    LOGIN = st.button("ENTER", "ButtonLogin","Login", check_identity, (USER_ID, PASSWORD))
     
     if LOGIN:
         st.writ("Login success")
