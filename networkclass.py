@@ -9,13 +9,6 @@ import networkx as nx
 class Networks_Game:
     
     def __init__(self, students, Network = None, Round = 0):
-        
-        if Network == None:
-            self.graph = nx.Graph()
-            self.graph
-        else:
-            self.graph = Network
-            
         self.round = Round
         self.students = students
         self.pending_changes = {}
@@ -25,6 +18,13 @@ class Networks_Game:
             self.pending_changes[student.id] = True
             self.students_ids.append(student.id)
         self.changes_made = 0
+        if Network == None:
+            self.graph = nx.Graph()
+            self.graph.add_nodes_from(self.students_ids)
+        else:
+            self.graph = Network
+            
+        
         
     def new_change(self, student, add1, add2, rem = None):
         connected_to = self.graph.neighbors(student.id)
@@ -69,6 +69,13 @@ class Networks_Game:
         else:
             
             return False
+    
+    def save_network(self):
+        pass
+    
+    def compute_ranking(self):
+        pass
+        
         
         
 class Student:
