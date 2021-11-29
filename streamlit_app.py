@@ -40,3 +40,5 @@ def main():
     
     if LOGIN:
         st.writ("Login success")
+
+main()
