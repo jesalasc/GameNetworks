@@ -42,9 +42,9 @@ def main():
     
     PASSWORD = st.text_input("Enter your password", "", 8,"PASSWORD")
     
-    LOGIN = st.button("ENTER", "ButtonLogin","Login", check_identity, (USER_ID, PASSWORD))
+    st.button("ENTER", "ButtonLogin","Login", check_identity, (USER_ID, PASSWORD))
     
-    if LOGIN:
-        st.write("Login success")
+    #if LOGIN:
+    #    st.write("Login success")
 
 main()
