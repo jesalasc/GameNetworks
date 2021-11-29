@@ -7,7 +7,7 @@ Created on Fri Nov 26 10:28:14 2021
 
 
 import streamlit as st
-import networkclass as ntc
+#import networkclass as ntc
 import json
 
 def check_identity(ID, PASSWORD):
