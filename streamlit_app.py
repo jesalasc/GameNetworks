@@ -82,6 +82,8 @@ def main():
             "Connection 2"
             add2 = st.selectbox("Add this connection", Available)
             st.buttom("SELECT", "add button")
+            
+            st.sessionstate.Game.new_change(st.sessionstate.User.id, add1, add2)
 
         
         else:
@@ -95,5 +97,7 @@ def main():
             "Remove Connection"
             rem = st.selectbox("Add this connection", Connected)
             st.buttom("SELECT", "add button")
+            
+            st.sessionstate.Game.new_change(st.sessionstate.User.id, add1, add2, rem)
         
 main()
