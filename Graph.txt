@@ -1,5 +1,0 @@
-admin1 admin2
-admin2 admin3
-admin3 admin4
-admin admin1
-admin admin4
