@@ -49,11 +49,13 @@ Game.apply_changes(students)
 Game.save_network("Graph_Round"+str(Game.round)+".txt")
 
 
+for config_file in users_config:
+    os.remove(config_file)
+    
+
+Metadata["Round"] = Game.round
+
 with open('Metadata.txt', 'w') as fp:
     json.dump(Metadata, fp)
     fp.close()
 
-for config_file in users_config:
-    os.remove(config_file)
-    
-Metadata["Round"] = Game.round

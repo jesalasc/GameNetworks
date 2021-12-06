@@ -1,11 +1,9 @@
+admin admin2 {}
 admin s2009570 {}
 admin admin4 {}
 s2009570 admin1 {}
 s2009570 admin2 {}
-s2009570 admin3 {}
-s2009570 admin4 {}
 admin1 admin2 {}
-admin1 admin3 {}
-admin1 admin4 {}
 admin2 admin3 {}
 admin2 admin4 {}
+admin3 admin4 {}
