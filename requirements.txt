@@ -1,2 +1,3 @@
 networkx
 numpy
+Bokeh == 2.2.2
